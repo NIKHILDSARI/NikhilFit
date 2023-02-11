@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Select Body Part</title>
+  </head>
+  <body>
+    <form action="" method="POST">
+      {% csrf_token %}
+      <label for="body_part">Select Body Part:</label>
+      <select id="body_part" name="body_part">
+        <option value="chest">Chest</option>
+        <option value="back">Back</option>
+        <option value="legs">Legs</option>
+        <option value="core">Core</option>
+      </select>
+      <input type="submit" value="Show Progress" name="show">
+      <input type="submit" value="Logout" name="logout">
+      <input type="submit" value="Back to Split" name="back">
+
+    </form>
+  </body>
+</html>

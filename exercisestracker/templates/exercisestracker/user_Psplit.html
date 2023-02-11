@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User History</title>
+</head>
+<body>
+    <h1>Your progress</h1>
+    <form method="post">
+        <input type="submit" value="Logout" name="logout">
+        <input type="submit" value="Back to Progress" name="backprogress">
+        <input type="submit" value="Back to Split" name="back">
+        {% csrf_token %}
+        {% for key, item in context.items %}
+            <p>Exercise: {{ item.exercises }}</p>
+            <p>Set 1: {{ item.set1 }}</p>
+            <p>Set 2: {{ item.set2 }}</p>
+            <p>Set 3: {{ item.set3 }}</p>
+        {% endfor %}
+        
+    </form>
+</body>
+</html>

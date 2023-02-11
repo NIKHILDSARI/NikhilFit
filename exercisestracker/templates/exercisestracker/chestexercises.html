@@ -1,0 +1,26 @@
+<form method="post">
+    {% csrf_token %}
+    <label for="exercises">Exercises:</label>
+    <select name="exercises" id="exercises">
+      <option value="benchpress">Benchpress</option>
+      <option value="inclinepress">Inclinepress</option>
+      <option value="declinepress">Declinepress</option>
+      <option value="flatepress">Flatepress</option>
+    </select><br><br>
+  
+    <label for="set1">Set 1:</label>
+    <input type="text" id="set1" name="set1"><br><br>
+  
+    <label for="set2">Set 2:</label>
+    <input type="text" id="set2" name="set2"><br><br>
+  
+    <label for="set3">Set 3:</label>
+    <input type="text" id="set3" name="set3"><br><br>
+  
+    <input type="submit" value="Save & Nextworkout" name="save">
+    <input type="submit" value="Back" name="back">
+    <input type="submit" value="View Progress" name="view">
+  </form> 
+  
+  
+  
